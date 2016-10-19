@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bdwuzhou.ximalaya.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_find"
+            style="@style/BottomBar"
+            android:drawableTop="@drawable/tab4"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_main_subscribe"
+            style="@style/BottomBar"
+            android:drawableTop="@drawable/tab1"
+            android:text="订阅听"/>
+
+        <RadioButton
+            style="@style/BottomBar"
+            android:drawableTop="@mipmap/play_icon_default"/>
+
+        <RadioButton
+            style="@style/BottomBar"
+            android:drawableTop="@drawable/tab2"
+            android:text="下载听"/>
+
+        <RadioButton
+            style="@style/BottomBar"
+            android:drawableTop="@drawable/tab5"
+            android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>
